@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #DCF3FF;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 1</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+    <script>
+        function sayHello() {
+            let inputElement = document.getElementById('name-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output');
+            if (name == 'System.out.println("Disney is Cool");') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function fix() {
+            let inputElement = document.getElementById('name1-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output1');
+            if (name == 'System.out.println("Hello World");') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function tf() {
+            let inputElement = document.getElementById('name2-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output2');
+            if (name == 'True' || name == 'true' || name == 'True.' || name == 'true.') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function kevin() {
+            let inputElement = document.getElementById('name3-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output3');
+            if (name == 'System.out.println("Kevin");') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function rishi() {
+            let inputElement = document.getElementById('name4-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output4');
+            if (name == 'System.out.println("Rishi");') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images/helloworld.jpg'); 
+            background-size: cover; height:480px; padding-top:80px;text-align: center;">
+        <h1 style="font-size:100px; color:white; margin:10px;">Lesson 1</h1>
+        <p style="font-size:30px; color:white;"><em>Hello World!</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:600px; margin:100px;">
+        <h1>Welcome! </h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            We are going to learn how to write our first line of Code! We will be using the language Java. At the end of
+            the lesson,
+            you will win a Frozen Sticker.<br>
+
+            Let’s start with the famous Hello World code. It shows how you print something. In this case, it’s our first
+            code, so we want our computer to say hello to the world! The code is shown below. It prints out the words
+            "Hello World"
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+            public static void main (string args[]){<br>
+            System.out.println(“Hello World”);<br>
+            }
+            </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            When I first saw this code, I could kind of guess how it worked. One thing I was never sure of was what
+            “public static void main (string args[])” meant. Don’t worry! For now, let’s call it the “Main Header”. We
+            call it the Main Header because it’s where you write the main code. Don’t worry about the main header for
+            this course. I want to introduce it to you so you aren’t confused about it in the future.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            After the header, we must put brackets, { }. After we write the main header, the brackets are where we put
+            the code inside. Make sure you close the bracket. We can’t have a “{“ with no “}”.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Then, we can write our print command. System.out.println(“Hello World”); is what prints out “Hello World”.
+            System.out.println means we are printing to the system. The “ln” at the end of print means that we will move
+            to the next line for our next print statement. Don’t worry about it too much.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            We then put () to indicate what we want to print, and write what we want to print inside the (). Therefore,
+            we write “Hello World” within the ().
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            The semicolon is there after every line of java. Don’t use it after the header. Sorry about talking
+            about the header so much. But I when I was learning coding, I was really confused because of it. So I’m
+            trying to make sure you guys
+            aren’t as confused as me. For now, make sure that after you print something, you put a semicolon afterward.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Be exact! Don’t forget anything. Make sure what’s in the “ " matches exactly what you want to print.
+
+            Let’s practice!
+        </p>
+    </div>
+    <div style="height:125px;">&nbsp;</div>
+    <img src="Images/hello.jpg" alt="Hello" style="height:375px; margin:100px;float: left;">
+    <img src="Images/world.jpg" alt="World" style="height:375px; margin:100px;float: right">
+    <!--Third section-->
+    <div style="height:1000x;">&nbsp;</div>
+
+    <div style="height:1550px; margin:100px;">
+        <h1>Practice Problems</h1>
+        <p>
+            Note! This doesn't keep track of your progress if you exit the website. I recommend you do all of the
+            problems at once.
+            If you decide not to or get stuck, keep track of which questions you've already solved!
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            1. Print “Disney is Cool".<br>
+            <input id="name-input" style="width:300px;">
+            <button onclick="sayHello();">
+                Check
+            </button>
+        <p id="output"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            2. What's wrong this “Hello World” Code? Type in the correct version.(Don't type in what's wrong) <br>
+            Incorrect code: System.ot.println("Hello World")<br>
+            <input id="name1-input" style="width:300px;">
+            <button onclick="fix();">
+                Check
+            </button>
+        <p id="output1"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            3. True or false, there needs to be the same amount of {(opening brackets) as }(closing brackets) in a
+            code.<br>
+            <input id="name2-input" style="width:300px;">
+            <button onclick="tf();">
+                Check
+            </button>
+        <p id="output2"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            4. Print the following:<br>
+            Kevin<br>
+            Rishi<br>
+            <input id="name3-input" style="width:300px;">
+            <button onclick="kevin();">
+                Check
+            </button>
+        <p id="output3"></p>
+        <input id="name4-input" style="width:300px;">
+        <button onclick="rishi();">
+            Check
+        </button>
+        <p id="output4"></p>
+        </p>
+        <img src="Images2/amazing.jpg" alt="Hello" style="height:375px; margin:100px;">
+    </div>
+    <p style="line-height: 2.0; font-size:20px;">
+        You won a Sticker! <br>
+        Frozen(2013) and Frozen 2(2019)<br>
+        <img src="sticker/frozen.jpg" alt="Hello" style="height:375px; margin:100px;">
+    </p>
+    <p style="line-height: 2.0; font-size:20px;">
+        Amazing Job! Way to Go! <br>
+        Next Lesson: <a href="Lesson2.html">Variables</a><br>
+        Home Page: <a href="main.html">Home</a>
+    </p>
+    </div>
+</body>
+
+
+</html>

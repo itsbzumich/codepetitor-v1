@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 2</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+    <script>
+        function sayHello() {
+            let inputElement = document.getElementById('name-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output');
+            if (name == 'string s;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function fix() {
+            let inputElement = document.getElementById('name1-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output1');
+            name = name.replace(/\s/g, '');
+            if (name == 'doublea=0.5;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function tf() {
+            let inputElement = document.getElementById('name2-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output2');
+            if (name == 'booleanbool=false;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function kevin() {
+            let inputElement = document.getElementById('name3-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output3');
+            if (name == 'intnum=5;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function rishi() {
+            let inputElement = document.getElementById('name4-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output4');
+            if (name == 'num=2;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images/variable.webp'); 
+            background-size: cover; height:480px; padding-top:80px;text-align: center;">
+        <h1 style="font-size:100px; color:rgb(0, 0, 0); margin:10px;">Lesson 2</h1>
+        <div style="height:350px;">&nbsp;</div>
+        <p style="font-size:30px; color:rgb(0, 0, 0);"><em>Variables</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:2700px; margin:100px;">
+        <h1>Introduction to Variables</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            In algebra, we use variables to represent a value. By referring to the variable, we refer to the value. So
+            with the equation x+1=2, x represents a number, in this case 1. We typically use a variable to represent
+            something we are unsure about.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            In computer science, variables are used the same way. They represent something, typically something we need
+            to change or manipulate. Unlike in math, we typically know the value of a variable at the start. Therefore,
+            when we create a variable, we usually set it to a value.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            To start, let’s focus on numbers, in particular, whole numbers. To make a number variable, use the following
+            format.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int a=1;
+            </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            “int” is the type of variable. You’ll soon learn about the other things variables can represent besides
+            numbers! In this case, however, we want an integer(whole number), so we put the “int”. “a” is the name of
+            the variable. Like in math, all variables have names, so we must name our variable. Finally, we use “=1” to
+            set the value. Like all lines of code, we end with a semicolon “;”.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Now, the computer knows that “a” is an integer with a value one. It will remember this entire code unless we
+            want to change it, which we will discuss later.Another way to do this is as follows.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int a;<br>
+                a=1;
+            </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            First, we declare an integer a. It doesn’t have a value yet. By not assinging a value, we created a variable
+            that we can use for the future. Then, we set it to 1 on a separate line.
+            Let’s look at another example of code.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int a=1;<br>
+                a=2;
+            </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            We’ve already seen what the first line does. It creates an integer variable "a" with a value of 1. Line 2
+            simply changes the value of the variable. So in this case, "a" changes from 1 to 2.
+        </p>
+        <img src="Images/greatjob.webp" style="height:300px; margin:100px;" alt="Good Job.">
+        <h1>Types of Variables</h1>
+        <table border="1" style="font-size:20px;">
+            <tr>
+                <th>Variable Type</th>
+                <th>Declaration</th>
+                <th>What is it?</th>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>int a=1;</td>
+                <td>whole numbers</td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>string s="yes"</td>
+                <td>words, characters, and sentences</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>double s=1.2</td>
+                <td>any number(whole and decimal)</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>boolean a=true;</td>
+                <td>true or false</td>
+            </tr>
+        </table>
+        <p style="line-height: 2.0; font-size:20px;">
+            Now, let’s talk about other types of data you can store in variables. The table above shows a great summary
+            of them!
+            I'll provide some more details about them.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            A double is the same as a decimal number. Therefore, if you want to make a variable and set it to a decimal
+            value, use a double. It can also represent a whole number. You usually want to use "int" for whole numbers.
+            Here's another example of us declaring a double.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                Double a=1.234;
+            </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Strings can be any size list of characters. Think of them as words, phrases, or a random list of characters
+            put together. Use “ " or double quotes around them.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                string word= "apple”;
+                <br>
+                string goat= "I am the GOAT at coding yessir!”;
+            </code>
+        </p>
+        <img src="Images/goat.png" style="height:300px; margin:100px;" alt="GOAT.">
+        <p style=font-size:20px;">GOAT=Greatest of All Time</p>
+    </div>
+    <!--Third section-->
+    <div style="height:500px; margin:100px;">
+        <h1>Practice Problems</h1>
+        <p>
+            Note! This doesn't keep track of your progress if you exit the website. I recommend you do all of the
+            problems at once.
+            If you decide not to or get stuck, keep track of which questions you've already solved!
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            1. Declare a string variable with the name "s". Don't assign it.<br>
+            <input id="name-input" style="width:300px;">
+            <button onclick="sayHello();">
+                Check
+            </button>
+        <p id="output"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            2. Declare a double variable named "a" with a value of 0.5. <br>
+            <input id="name1-input" style="width:300px;">
+            <button onclick="fix();">
+                Check
+            </button>
+        <p id="output1"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            3. Declare a boolean variable named "bool" and set it to false.<br>
+            <input id="name2-input" style="width:300px;">
+            <button onclick="tf();">
+                Check
+            </button>
+        <p id="output2"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            4. Declare an integer variable named "num" with a value of 5, and switch it to 2.<br>
+            <input id="name3-input" style="width:300px;">
+            <button onclick="kevin();">
+                Check
+            </button>
+        <p id="output3"></p>
+        <input id="name4-input" style="width:300px;">
+        <button onclick="rishi();">
+            Check
+        </button>
+        <p id="output4"></p>
+        </p>
+        <div style="height:100px; margin:100px;">
+        </div>
+        <p style="line-height: 2.0; font-size:20px;">
+            You won a Sticker! <br>
+            Cars(2006)<br>
+            <img src="sticker/cars.jpg" alt="Hello" style="height:375px; margin:100px;"><br>
+            Collection:<br>
+            <img src="sticker/frozen.jpg" alt="Hello" style="height:200px; margin:100px;">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Amazing Job! Way to Go! <br>
+            Next Lesson: <a href="Lesson3.html">Arithmetic</a><br>
+            Home Page: <a href="main.html">Home</a>
+        </p>
+    </div>
+</body>
+
+</html>

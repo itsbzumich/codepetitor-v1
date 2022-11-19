@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#0065C4;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 4</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+    <script>
+        function p1() {
+            let inputElement = document.getElementById('name-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output');
+            name = name.replace(/\s/g, '');
+            if (name == 'if(aced){System.out.println("ACED");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p2() {
+            let inputElement = document.getElementById('name1-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output1');
+            name = name.replace(/\s/g, '');
+            if (name == 'else{System.out.println("Nope");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p3() {
+            let inputElement = document.getElementById('name2-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output2');
+            name = name.replace(/\s/g, '');
+            if (name == 'if(john>5){System.out.println("Cena");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p4() {
+            let inputElement = document.getElementById('name3-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output3');
+            name = name.replace(/\s/g, '');
+            if (name == 'else{System.out.println("Legend");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p5() {
+            let inputElement = document.getElementById('name4-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output4');
+            name = name.replace(/\s/g, '');
+            if (name == 'if(score>=30){System.out.println("Great");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p6() {
+            let inputElement = document.getElementById('name5-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output5');
+            if (name == 'else if(score>=20){System.out.println("Okay");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p7() {
+            let inputElement = document.getElementById('name6-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output6');
+            name = name.replace(/\s/g, '');
+            if (name == 'else{System.out.println("Poor");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p8() {
+            let inputElement = document.getElementById('name7-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output7');
+            if (name == 'Both') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p9() {
+            let inputElement = document.getElementById('name8-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output8');
+            if (name == 'None') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p10() {
+            let inputElement = document.getElementById('name9-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output9');
+            if (name == 'One') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p11() {
+            let inputElement = document.getElementById('name10-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output10');
+            name = name.replace(/\s/g, '');
+            if (name == 'if(a&&b){System.out.println("Both teams won!");}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images2/conditional.webp'); 
+            background-size: cover; height:400px; padding-top:150px;text-align: center;">
+        <div style="height:375px;">&nbsp;</div>
+        <h1 style="font-size:100px; color:rgb(0, 0, 0); margin:10px;">Lesson 4</h1>
+        <p style="font-size:30px; color:rgb(0, 0, 0);"><em>Conditional Statements and Booleans</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:100px;">&nbsp;</div>
+    <div style="height:5500px; margin:100px;">
+        <h1>Introduction</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            What if we wanted the computer to not always do the same thing? For example, let’s say we want to print
+            “Yes” if a number variable is above 10, and “No” if a number variable is less than 10. Well, we could write
+            two different codes and run them. But that’s not efficient. In this case, we must use Conditional
+            Statements. This allows the code to do different things based on the conditions. In a conditional statement,
+            we check to see if a boolean, a true or false value, is true or not. If it is, we will then execute the code
+            inside the brackets. If not, we’ll do something else. It’s okay if it’s confusing right now. By the end of
+            this lesson, you’ll understand a lot better!
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Here’s an example before we dive into more detail.<br>
+            <code>
+            if(true){<br>
+                System.out.println(“Hello World);<br>
+            }<br>
+            </code>
+            This code checks if the boolean value inside the “if()” is true or false. If it’s true, and since it is, it
+            will print out Hello World!
+        </p>
+        <h1>Booleans</h1>
+        <img src="Images2/torf.jpg" alt="TorF" style="height:375px; margin:100px;float: right">
+        <p style="line-height: 2.0; font-size:20px;">
+            In order to understand how conditional statements work, we need a greater understanding of booleans. This is
+            because in order to trigger an if statement, we need to pass in a boolean value. Thus, we’ll demonstrate
+            here how to generate such boolean values. </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            The most basic idea is directly using a boolean variable. For example: </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                boolean x=true;<br>
+        </code>
+            Then, we can say if(x) as our conditional statement. if(x) is true of course.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int x=0;<br>
+                x==10;<br>
+        </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            If we simply did x=10, we would be setting x to ten. Using "==", we will generate true if x is equal to ten.
+            It will generate false if x is not equal to ten.
+            Thus, if we wrote: <Br>
+            <code>
+                    if(x==10){<br>
+                        x=1;<br>
+                    }<br>
+                </code>
+            This code checks to see if x=10. Since it doesn't, it will set x equal to one. Be sure you know the
+            difference between == and =.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            What if we wanted to do something if x isn’t equal to ten? Then, we would use !=, which means “not equal
+            to”.<br>
+            <code>
+                if(x!=10){<br>
+                    System.out.println("Hello World");<br>
+                }<br>
+            </code>
+            This will only print Hello World if x is not equal to ten.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Our final case is to use < or> to generate a boolean. For example, let’s say we have an integer grade that
+                stores a grade. We can write if(grade>90) for example. If grade>90, it will be true. We use ">" and "<"
+                    just like we would in math. We can also use>= to symbolize greater than or equal to. <= would mean
+                        less than or equal to. </p>
+
+                        <p style="line-height: 2.0; font-size:20px;">
+                            To conclude this section, we will introduce a rather advanced topic. We can also combine
+                            booleans. Let’s say we have two booleans a and b. Let’s say we only want to do something if
+                            both a and b are true. We can write if (a&&b). && is the symbol for and.
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            On the other hand, let’s say we want to do something if only one of a or b is true. In that
+                            case, we would write a||b. This means a or b. || means or. a||b is true if only one of a or
+                            b is true. Both don’t need to be true.
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            One more important topic. What if we want the opposite of a boolean? What we want to do if(a
+                            isn't true?).
+                            Then, we use !a. The ! mark makes whatever's next to it the opposite. So now, if a is true,
+                            !a is false.
+                            If a is false, !a is true.
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            To summarize, we can directly call a boolean, use == to generate a boolean, use >/</>=/<= or
+                use !=to generate a boolean. We can combine multiple booleans with && or ||. ! means "not" . It makes a
+                true value false and a false value true. </p>
+                <img src="Images2/goodwork.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+                <h1>If Statements</h1>
+                <p style="line-height: 2.0; font-size:20px;">
+                    We've already mentioned if statements earlier. They are the ones that use "if".
+                    We will dive a little more in depth here.
+                </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    <code>
+                        if(boolean){<br>
+                            System.out.println(“true”);<br>
+                       }             <br>
+                    </code>
+                    If the boolean inside the parentheses is true, then we will run the statement inside the brackets,
+                    which is to print true. If it’s false, then we skip over the if statement and move on.
+                </p>
+                <h1>Else Statements</h1>
+                <p style="line-height: 2.0; font-size:20px;">
+                    Let’s assume that we have two cases. We want our program to do one thing if x is equal to 10, but do
+                    another thing if x is not equal to ten. Let’s try using two if statements for this.
+                    <code>
+                        if(x!=10){<br>
+                            x=10;<br>
+                        }<br>
+                        if(x==10){<br>
+                            System.out.println(“yes”);<br>
+                        } <br>
+                    </code>
+                    Can you spot the mistake? In this code, if x is not equal to 10, we switch it to equal to 10. Now x
+                    is equal to 10.
+                    Then, when we check if the next if statement is true, we realize it’s true, so we print “yes” as
+                    well. Therefore, when x is initially not 10, it’s doing both of the things inside the brackets,
+                    which we don’t want.
+                </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    If we want one or the other but not both, we can use the else statement. Here’s an example of
+                    it.<br>
+                    <code>
+                if(x!=10){<br>
+	                x=10;<br>
+                }<br>
+                else{<br>
+	                System.out.println(“yes”);<br>
+                }<br>
+                    </code>
+                    Now, if x!=10 initially, it will only run x=10. It won’t print yes as well. The else statement
+                    essentially states that if(x!=10), it will run x=10 and ONLY x=10. To that end, if x=10, it will
+                    print “yes”. It will first check to see if x!=10. Since x=10, it will run the else command instead.
+                </p>
+                <img src="Images2/keepitup.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+
+                <h1>Else If Statement</h1>
+                <p style="line-height: 2.0; font-size:20px;">
+                    Let’s say we want to test many conditions, but only want one to run. In this case, we will use else
+                    if statements along with if statements.
+                </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    <code>
+                            if(x==1){<br>
+                                System.out.println(“one”);<br>
+                            }<br>
+                            else if(x==2){<br>
+                                System.out.println(“two”);<br>
+                            }<br>
+                            else{<br>
+                                System.out.println(“invalid”);<br>
+                            }                      <br>      
+                    </code>
+                </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    Essentially, else if statements function as mini else statements with a restriction. If we add an
+                    else statement at the end, it will run the command within the else statement if and none of the
+                    else-if statements are true. Another way to think about it is that it will check all the statements
+                    until it finds one that's true. When it does, it runs that command and ends without checking the
+                    others.
+                </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    Here’s a quick summary before we start our practice problems.<br>
+                    &#x2022; If is the initial statement that does something if the boolean is true.<br>
+                    &#x2022; Else if statements after an if statement say that assuming the if is false, do the else if
+                    statement
+                    command. Does the first else if that's true.<br>
+                    &#x2022; Else is that if none of the if or else if booleans are true, then do the else statement
+                    command.<br>
+                </p>
+                <img src="Images/greatjob.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+
+        </p>
+    </div>
+    <!--Third section-->
+    <div style="height:100px;">&nbsp;</div>
+    <div style="height:800px; margin:100px;">
+        <h1>Functions/New Problem Format</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Before we start the next set of practice. I would like to introduce a new format of a question.<br>
+            <code>
+    void q1(boolean a){<br>
+        Insert your code here.<br>
+    }<br>
+    </code>
+            This has a different header and looks kind of weird. It's called a function. We write it outside of the
+            main code. Let's discuss how it works.<br>
+            Basically, we have an input and an output. Whats inside the (), in this case, boolean a,
+            is something that we don't know. It's out input, and can be anything. a=true or a=false. We will have to
+            write our code without knowing the value of this
+            boolean. q1 is the name of the question and don’t worry about what void means.
+            The reason I’m going to start using functions is that I can specify random variables that you must use
+            within your code. In this case, I’m giving you a boolean called a
+            that I will define myself, but you won’t know what it is. For example, in the example code up bellow, let's
+            say we
+            had to print out the value of a. We would simply just write System.out.println(a); In other words, assume
+            whatever
+            is inside the parenthesis is already declared but has an unknown value. Feel free to reach out if you need
+            help!<br>
+            Example Question:
+            If boolean a is true, print “I love you”. If it isn’t, print out “NO”.<br>
+            Answer:<br>
+            <code>
+                void q1(boolean a){<br>
+                    if(a){<br>
+                        System.out.println(“I love you”);<br>
+                    }<br>
+                    else{<br>
+                        System.out.println(“NO”);<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+    </div>
+    <img src="Images2/pmp.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+    <!--Fourth section-->
+    <div style="height:1800px; margin:100px;">
+        <h1>Practice Problems</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Note! This doesn't keep track of your progress if you exit the website. I recommend you do all of the
+            problems at once.
+            If you decide not to or get stuck, keep track of which questions you've already solved!
+            Note 2: When you write your if statements. PUT EVERYTHING ON ONE LINE.<Br>
+            Ex: if(a){System.out.println("Hello");}<br>
+            This does the same thing as what we've showed previously! Do this or else it won't grade correctly.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            1. Given a boolean aced, print out “ACED” if aced is true. If it isn’t true, print out “Nope”.<br>
+            void q1(boolean aced){<br>
+            <input id="name-input" style="width:300px;">
+            <button onclick="p1();">
+                Check
+            </button>
+        <p id="output"></p>
+        <br>
+        <input id="name1-input" style="width:300px;">
+        <button onclick="p2();">
+            Check
+        </button>
+        <p id="output1"></p>
+        }<br>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            2. Given an integer "john", print “Cena” if john is greater than 5. Else, print out “Legend”.<br>
+            Header not shown. int john; already declared.<br>
+            <input id="name2-input" style="width:300px;">
+            <button onclick="p3();">
+                Check
+            </button>
+        <p id="output2"></p>
+        <br>
+        <input id="name3-input" style="width:300px;">
+        <button onclick="p4();">
+            Check
+        </button>
+        <p id="output3"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            3. Given an integer score, print “Great” if the score is greater than or equal to 30. If not, print “Okay”
+            if the score is greater than or equal to 20. Else, print “Poor”. <br>
+            <input id="name4-input" style="width:300px;">
+            <button onclick="p5();">
+                Check
+            </button>
+        <p id="output4"></p>
+        <input id="name5-input" style="width:300px;">
+        <button onclick="p6();">
+            Check
+        </button>
+        <p id="output5"></p>
+        <input id="name6-input" style="width:300px;">
+        <button onclick="p7();">
+            Check
+        </button>
+        <p id="output6"></p>
+        <p style="line-height: 2.0; font-size:20px;">
+            4. Describe what the following code prints given the values of a and b.<br>
+            <code>
+                void wack(int a,int b){<br>
+                        if(a>100&&b>100){<br>
+                        System.out.println(“Both”);<br>
+                        }<br>
+                        else if(a>100||b>100){<br>
+                            System.out.println(“One”);<br>
+                        }<br>
+                        else{<br>
+                            System.out.println(“None”);<br>
+                        }<br>
+                }  <br>              
+            </code>
+            a=200 and b=101<br>
+            <input id="name7-input" style="width:300px;">
+            <button onclick="p8();">
+                Check
+            </button>
+        <p id="output7"></p>
+        a=100 and b=99<br>
+        <input id="name8-input" style="width:300px;">
+        <button onclick="p9();">
+            Check
+        </button>
+        <p id="output8"></p>
+        a=1 and b=101<br>
+        <input id="name9-input" style="width:300px;">
+        <button onclick="p10();">
+            Check
+        </button>
+        <p id="output9"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            5. Given two boolean values a and b, print “Both teams won!” if both a and b are true.<br>
+            <input id="name10-input" style="width:300px;">
+            <button onclick="p11();">
+                Check
+            </button>
+        <p id="output10"></p>
+        </p>
+        <div style="height:100px;">&nbsp;</div>
+        <p style="line-height: 2.0; font-size:20px;">
+            You won a Sticker! <br>
+            Tangled (2010)<br>
+            <img src="sticker/tangeled.jpg" alt="Hello" style="height:375px; margin:100px;"><br>
+            Collection:<br>
+            <img src="sticker/littlemermaid.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/cars.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/frozen.jpg" alt="Hello" style="height:200px; margin:100px;">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Amazing Job! Way to Go! <br>
+            Next Lesson: <a href="Lesson5.html" style="color: white">Arrays</a><br>
+            Home Page: <a href="main.html" style="color: white">Home</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

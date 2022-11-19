@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: white;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 7</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images2/problems.jpg'); 
+            background-size: cover; height:650px; padding-top:80px;text-align: center;">
+        <h1 style="font-size:100px; color:rgb(0, 0, 0); margin:10px;">Lesson 7</h1>
+        <div style="height:500px;">&nbsp;</div>
+        <p style="font-size:30px; color:rgb(0, 0, 0);"><em>Problems(Easy)</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:200px; margin:100px;">
+        <h1>Introduction</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Congrats! You made it! You got through 6 hard lessons and earned 6 amazing stickers! Be proud of
+            yourself!<br>
+            It's go time. You know how to code now. Step 1 complete. Next step, problem solving.<br>
+
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Here, I'm going to give you problems to solve. You will be given a problem statement. You need to write a
+            code
+            to solve the problem. <br>
+            However, the format may look a bit weird. Let me give an example and explain as best as
+            possible
+            what to do.
+        </p>
+    </div>
+    <div style="height:500px; margin:100px;">
+        <p style="line-height: 2.0; font-size:20px;">
+            Example:<br>
+            1. You are given a boolean f that indicates whether or not you failed the test. Return true if you failed
+            and false if you didn't fail.
+        </p>
+        <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uLL?rw=1&arg=0&stdin=0">
+        </div>
+    </div>
+    <div style="height:400px; margin:100px;">
+        <p style="line-height: 2.0; font-size:20px;">
+            Where should we start? For each problem, check where to write the code. In this case,
+            we want you to write the function tf. Look for tf. It should say " static boolean tf(boolean f)". We want to
+            write our code in here. Let's go over what this means.<br>
+        <ul style="font-size:20px;">
+            <li>Ignore static. </li>
+            <li> Boolean is the return type. At the end of the code, you must return a boolean value.
+                This means either true, false, or a boolean value/expression (Lesson 4).</li>
+            <li> "tf" is the name of the function. Within it, it will say to write the code.</li>
+            <li>boolean f is a variable that you don't know. You need to assume it's already declared
+                and solve the problem to work for ANY value of f. </li>
+        </ul>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;"">
+        So basically, given the variables inside the parenthesis, you need to write a code that does what the problem tells you to do.
+        So for this problem, it's simple. We print out f. If f is true it will print true. If f is false we print false. BUT.
+        </p>
+        <p style=" line-height: 2.0; font-size:20px;"">
+            In a function, we return instead of print. How do you return something? Think about it this way.
+            Let's say we want to print the value of f. We write <code>System.out.println(f);</code>. In a function,
+            we want you to "return" something. All you need to do is type in <code> return "answer";</code>
+            Therefore, we can just type in "return f;" Type that in "type code below" and try running the code
+            above.<br>
+            It should say Correct!
+        </p>
+        <p style=" line-height: 2.0; font-size:20px;"">
+            In the future, it's going to be similar. If the question asks to return an integer and we have
+            our answer in the variable x, we will type " return x;" at the end of the function to get our answer! I'll
+            explain the first question as well! </p>
+    </div>
+    <!--Third section-->
+    <img src="Images2/gotime.jpg" alt="Hello" style="height:375px; margin:100px;"><br>
+    <div style="height:50px; margin:100px;">
+        <h1>Problems</h1>
+        <p style=" line-height: 2.0; font-size:20px;"">
+            1. The boolean weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. 
+            We wake up early if it's a weekday and we are not on vacation. Return true if we wake up early.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uVg?rw=1&arg=0&stdin=0">
+    </div>
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+        Here, we want to return a boolean on whether or not we need to wake up early. The condition for
+        that is that it must be a weekday and we must be on vacation. We can create a boolean that represents this: 
+        weekday&&!vacation. As we learned in lesson 4, && means and and ! means not. Thus, what we wrote means
+        weekday and not vacation. Therefore, we type in " return weekday&&!vacation;" where it says us to. Try for
+            yourself! </p>
+    </div>
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+            2. Given an int n, return twice n if n is less than 21. Else, return n-21.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uVr?rw=1&arg=0&stdin=0">
+    </div>
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+            3. Given two booleans twin1 and twin2 indicating if the twins want McDonald's, return true if both have the same response.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5vBg?rw=1&arg=0&stdin=0">
+    </div>
+
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+            4. Given two ints a and b return their sum unless they are equal to each other. If they are equal to each other return triple their sum.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uVA?rw=1&arg=0&stdin=0">
+    </div>
+
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+            5. Given two ints a and b return true if they sum up to 11 or if one of them is equal to 11.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uVK?rw=1&arg=0&stdin=0">
+    </div>
+
+    <div style="margin:100px;">
+        <p style=" line-height: 2.0; font-size:20px;"">
+            6. Given an int array arr, return true if the first or last element of the array is equal to 5.
+        </p>
+    </div>
+    <div data-pym-src=" https://www.jdoodle.com/embed/v0/5uVQ?rw=1&arg=0&stdin=0">
+    </div>
+    <!--Fourth section-->
+    <div style="height:100px;">&nbsp;</div>
+    <div style=" height:1000px; margin:150px;">
+        <p style="line-height: 2.0; font-size:20px;">
+            You won a Sticker! <br>
+            <img src="Images2/incredibles.jpg" alt="Hello" style="height:375px; margin:100px;"><br>
+            Collection:<br>
+            <img src="sticker/lionking.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/toystory.webp" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/tangeled.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/littlemermaid.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/cars.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/frozen.jpg" alt="Hello" style="height:200px; margin:100px;">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Amazing Job! Way to Go! <br>
+            Next Lesson: <a href="Lesson8.html">Problems(Medium)</a><br>
+            Home Page: <a href="main.html">Home</a>
+        </p>
+    </div>
+</body>
+<script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+
+</html>

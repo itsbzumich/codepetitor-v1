@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:black; color:white">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 5</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+    <script>
+        function p1() {
+            let inputElement = document.getElementById('name-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output');
+            name = name.replace(/\s/g, '');
+            if (name == 'string[]s=newstring[12];') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p2() {
+            let inputElement = document.getElementById('name1-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output1');
+            if (name == '4') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p3() {
+            let inputElement = document.getElementById('name2-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output2');
+            name = name.replace(/\s/g, '');
+            if (name == 'int[]a=newint[10];') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p4() {
+            let inputElement = document.getElementById('name3-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output3');
+            name = name.replace(/\s/g, '');
+            if (name == 'a[0]=10;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p5() {
+            let inputElement = document.getElementById('name4-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output4');
+            if (name == 'a[5]=4;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p6() {
+            let inputElement = document.getElementById('name5-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output5');
+            if (name == 'string[]sanders=newstring[5];') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p7() {
+            let inputElement = document.getElementById('name6-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output6');
+            if (name == 'sanders[1]="beans";') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p8() {
+            let inputElement = document.getElementById('name7-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output7');
+            if (name == 'System.out.println(sanders[1]);') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p9() {
+            let inputElement = document.getElementById('name8-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output8');
+            if (name == 'int[]yo=newint[4];') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p10() {
+            let inputElement = document.getElementById('name9-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output9');
+            if (name == 'yo[0]=1;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p11() {
+            let inputElement = document.getElementById('name10-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output10');
+            if (name == 'yo[1]=2;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p12() {
+            let inputElement = document.getElementById('name11-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output11');
+            if (name == 'yo[2]=yo[1]+yo[0];' || name == 'yo[2]=yo[0]+yo[1];') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images/math.jpg'); 
+            background-size: cover; height:400px; padding-top:150px;text-align: center;">
+        <h1 style="font-size:100px; color:rgb(255, 255, 255); margin:10px;">Lesson 5</h1>
+        <div style="height:275px;">&nbsp;</div>
+        <p style="font-size:30px; color:rgb(255, 255, 255);"><em>Arrays</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:10px;">&nbsp;</div>
+    <div style="height:600px; margin:100px;">
+        <h1>Introduction to Arrays </h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Many times, we want to store multiple values instead of just one. That’s when using an array comes in handy.
+            This allows us to store many many numbers, strings, or booleans instead of having to make one at a time. All
+            of these elements are stored in the same array! Let’s give an example of an array and how you make one!
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int[] arr=new int[10];<br>
+            </code>
+            In the line of code above, we are creating an array of 10 integers. The name of the array is called arr.
+            <img src="Images2/arr.png" style="height:100px; margin:100px;" alt="GOAT.">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            The table above represents arr. It’s simply a java type that can store 10 integers. Currently, nothing’s in
+            it
+            because we never set it to equal anything. We will show you how to set elements, or spaces in the picture,
+            to
+            equal certain values. Keep in mind arr is a variable name that refers to the array. Also, the size of this
+            array is fixed. We can't change the size once it's declared.
+        </p>
+        <img src="Images2/access.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+
+        <h1>Indexing and Accessing </h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            To access each element in the array, we must use a special call. As you can see in the drawing of the array
+            from the previous section, I labeled each box with a number underneath. This will represent the index of the
+            array. In an array, the first element has an index of 0. This may sound weird. Why isn’t the first element
+            index 1? Well, computers are weird and I couldn’t tell you. But from there, we count by one each time, so
+            the second element is index 1, the third element is index 2, and so on. So if we wanted to see the 5th
+            element in the array, we would look for index 4. </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Now comes the question of how to change/view the value of an element of an array. Let's check out the code
+            down below.<br>
+            <code>
+                arr[0]=1;<br>
+            </code>
+            This changes the value of the 0th index, or the 1st element, to 1. Be careful. Don't try to change an
+            element that doesn't exist. If the size of the array is 10, don't try to access index 10 or anything higher.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            If we want to print the value at a certain index, we can do so by calling print(arr[index]); No quotes here
+            either!<br>
+
+            <code>
+                arr[4]=10;<br>
+                System.out.println(arr[4]);<br>
+                
+            </code>
+            This will print out 10, the value of arr[4].
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+        <h1>Extra Topics</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            While we focused on int arrays for the first few, arrays can be of any type. int, double, boolean, and
+            string all work! I put some examples down below.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            We can also create arrays as follows. <br>
+
+            <code>int[] j={1,3,4,5};</code><br>
+            This basically allows us to set all the elements at the start instead
+            of going one by one.
+            Here, we directly write out the elements of the array. It’s efficient if we already know what we
+            want to put inside the array. Be sure to study how we did this so you can replicate it.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Let’s continue with the previous array j we just created. We can set elements of the array equal to the
+            values of the other elements.
+            <code>
+                j[3]=j[1]+j[2];<br>
+            </code>
+            This sets j[3] equal to 7, as j[1]+j[2]=7.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Finally, I'm going to cover the size of an array. Let’s say you forget the size, or don’t know the size of
+            an array. To get the size, call arr.length. Repalce arr with the name of the array.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            For example: <br>
+            <code>
+                int[] random=new int[4];<br>
+                int size=random.length;<br>
+                </code>
+            size is now equal to 4, as 4 is the size of random.
+        </p>
+        <img src="Images2/codingisfun.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+        <h1>Practice Problems</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            1. Declare a string array with a size 12. Call it "s". <br>
+            <input id="name-input" style="width:300px;">
+            <button onclick="p1();">
+                Check
+            </button>
+        <p id="output"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            2. What index is the 5th element of an array? (Enter single number)<br>
+            <input id="name1-input" style="width:300px;">
+            <button onclick="p2();">
+                Check
+            </button>
+        <p id="output1"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            3.Create an integer array size 10. Name it "a". Set the first element equal to 10. Set INDEX 5(not the 5th
+            element) equal
+            to 4<br>
+            Create array.<br>
+            <input id="name2-input" style="width:300px;">
+            <button onclick="p3();">
+                Check
+            </button><br>
+            Set first element.<br>
+        <p id="output2"></p>
+        <input id="name3-input" style="width:300px;">
+        <button onclick="p4();">
+            Check
+        </button>
+        <p id="output3"></p><br>
+        Set index 5.<br>
+        <input id="name4-input" style="width:300px;">
+        <button onclick="p5();">
+            Check
+        </button>
+        <p id="output4"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            4. Create a string array named "sanders" with a size of 5(line 1). Set the second element equal to
+            “beans”(line 2). Print
+            the
+            second element of the array(line 3).
+            <input id="name5-input" style="width:300px;">
+            <button onclick="p6();">
+                Check
+            </button>
+        <p id="output5"></p>
+        <input id="name6-input" style="width:300px;">
+        <button onclick="p7();">
+            Check
+        </button>
+        <p id="output6"></p>
+        <input id="name7-input" style="width:300px;">
+        <button onclick="p8();">
+            Check
+        </button>
+        <p id="output7"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            5. Create an integer array size 4 named "yo"(line 1). Let the first element be equal to 1(line 2). Let the
+            second element be
+            2(line 3).
+            Let the
+            3rd element be equal to the sum of the previous two elements(line 4).<br>
+            <input id="name8-input" style="width:300px;">
+            <button onclick="p9();">
+                Check
+            </button>
+        <p id="output8"></p>
+        <input id="name9-input" style="width:300px;">
+        <button onclick="p10();">
+            Check
+        </button>
+        <p id="output9"></p>
+        <input id="name10-input" style="width:300px;">
+        <button onclick="p11();">
+            Check
+        </button>
+        <p id="output10"></p>
+        <input id="name11-input" style="width:300px;">
+        <button onclick="p12();">
+            Check
+        </button>
+        <p id="output11"></p>
+        </p>
+        <div style="height:150px;">&nbsp;</div>
+        <p style="line-height: 2.0; font-size:20px;">
+            You won a Sticker! <br>
+            Toy Story (1995)<br>
+            <img src="sticker/toystory.webp" alt="Hello" style="height:375px; margin:100px;"><br>
+            Collection:<br>
+            <img src="sticker/tangeled.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/littlemermaid.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/cars.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/frozen.jpg" alt="Hello" style="height:200px; margin:100px;">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Amazing Job! Way to Go! <br>
+            Next Lesson: <a href="Lesson6.html">Loops</a><br>
+            Home Page: <a href="main.html">Home</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: limegreen;">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 6</title>
+    <link rel="shortcut icon" href="Images/Logo.png" />
+    <script>
+        function p1() {
+            let inputElement = document.getElementById('name-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output');
+            if (name == '5') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p2() {
+            let inputElement = document.getElementById('name1-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output1');
+            if (name == 'yes' || name == 'Yes') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p3() {
+            let inputElement = document.getElementById('name2-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output2');
+            name = name.replace(/\s/g, '');
+            if (name == 'while(c<20){') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p4() {
+            let inputElement = document.getElementById('name3-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output3');
+            name = name.replace(/\s/g, '');
+            if (name == 'c++;' || name == 'c=c+1;' || name == 'c=1+c;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p5() {
+            let inputElement = document.getElementById('name4-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output4');
+            if (name == '}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p6() {
+            let inputElement = document.getElementById('name5-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output5');
+            if (name == 'inti=0;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p7() {
+            let inputElement = document.getElementById('name6-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output6');
+            name = name.replace(/\s/g, '');
+            if (name == 'while(i<10){') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p8() {
+            let inputElement = document.getElementById('name7-input');
+            let name = inputElement.value;
+            name = name.replace(/\s/g, '');
+            let outputElement = document.getElementById('output7');
+            if (name == 'arr[i]=i;') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+        function p9() {
+            let inputElement = document.getElementById('name8-input');
+            let name = inputElement.value;
+            let outputElement = document.getElementById('output8');
+            if (name == '}') {
+                outputElement.innerText = 'Correct!'
+            }
+            else {
+                outputElement.innerText = 'Try Again!'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--First section-->
+    <div style="background-image: url('Images2/loop.png'); 
+            background-size: cover; height:650px; padding-top:80px;text-align: center;">
+        <h1 style="font-size:100px; color:rgb(0, 0, 0); margin:10px;">Lesson 6</h1>
+        <div style="height:500px;">&nbsp;</div>
+        <p style="font-size:30px; color:rgb(0, 0, 0);"><em>Loops</em></p>
+    </div>
+    <!--Second section-->
+    <div style="height:2600px; margin:100px;">
+        <h1>Introduction</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Assume we have an array of integers. Let’s say it’s a big one. Size 1000.
+            Let’s say we want to fill it up with 1s. Are you excited to write 1000 lines of code to fill it up!
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            If you said yes, you are weird. If you’re normal, you will love this lesson about loops. Loops are ways we
+            can tell the computer to do something over and over again. This way, we don’t have to write 1000 lines of
+            code. We tell the computer to stop by telling it to check if a boolean is false. If it’s false, we must stop
+            the loop. In a sense, this aspect of the loop is similar to an if statement that tells the computer whether
+            or not to run a command.
+
+            That might’ve been a bit confusing. I know. Let me try to help you out as much as possible. We will be
+            introducing two types of loops today. The for-loop and the while-loop. I will provide as much explanation
+            and examples as possible to help you guys learn this concept! It’s a hard one, but we will get through it!
+
+        </p>
+        <img src="Images2/lol.jpg" style="height:400px; margin:100px;" alt="GOAT.">
+        <h1>For-Loops</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            Let’s look at an example of a for-loop. Try to guess what you think it does!<br>
+
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            <code>
+                int[] arr=new int[1000];<br>
+                for(int i=0;i<1000;i++){<br>
+                    arr[i]=0;<br>
+                }     <br>           
+            </code>
+            What we are doing here is first creating an integer i, that we start at 0. We do this within the () after
+            the “for”. Then, we check if i is less than arr.length, which is put after a “;” after declaring int i=0. If
+            this is
+            true, we can run the loop. Here, we simply set arr[i] to equal 0. “i” is 0 right now, so arr[0]=0. Then,
+            our code does i++, which we put after the “;” after the boolean statement. This is the same thing as
+            i=i+1. All we are doing here is incrementing i so we can set the next element to equal to 0.
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Eventually, i will equal 999. We set arr[999]=0, then add 1 to i. Now i is equal to 1000. We check i<1000.
+                However, this is now false. Thus, the loop ends because of this. </p>
+                <p style="line-height: 2.0; font-size:20px;">
+                    To summarize, we have four parts to a for-loop. The first part declares a new variable, such as int
+                    i=0;. This happens before the loop even starts, and only happens once. The second
+                    part happens at the start each time we run the loop, where we check a boolean such as i<100. If this
+                        boolean is true, we run the loop. If it isn’t, the loop ends. The third part of the for-loop is
+                        what we do after the loop runs each time. For example, we do i++ because we need to change i for
+                        the loop to go through the whole array. The last part is the stuff we do in the loop! In the
+                        example, we set arr[i]=0; </p>
+                        <h1>While Loops</h1>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            The while loop is another very popular kind of loop. I believe it’s a lot simpler than for
+                            loop. However, you will see more for-loops than while loops, which is why I introduced it
+                            first. However, the while loop is still extremely important and useful!
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            Like a for-loop or an if statement, the while loop depends on a boolean. In fact, it depends
+                            solely on a boolean. While the boolean is true, the loop will run. Once the boolean isn’t
+                            true anymore, the loop will stop running. Check out the following example.
+
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            <code>
+                                boolean a=true;<br>
+                                while(a){<br>
+                                    System.out.println(1);<bR>
+                                }<br>
+                                </code>
+                            Here, the while loop checks if the boolean within the parentheses is true. In this case,
+                            since set a to true, it will always evaluate to true. Thus, the loop will always run.
+                        </p>
+                        <p style=" line-height: 2.0; font-size:20px;">
+                            What’s wrong with this while loop? Can you spot it?
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            Well, the loop never ends since the boolean will always evaluate to true. Thus, this will
+                            run an
+                            infinite amount of times. This is not okay. It will crash.
+                        </p>
+                        <p style="line-height: 2.0; font-size:20px;">
+                            Let’s give an example of a while loop that does work.<Br>
+
+                            <code>
+                            int i=0;<br>
+
+                            while(i<10){<br>
+                                 i++; <br>
+                                }<br>
+                            </code>
+                            Here, “i” starts at 0. We then check to see if i<10, which is true. Since it’s true, we run
+                                our code inside the loop, which adds 1 to i. It repeats this process until i is equal to
+                                10, where then i<10 is false. Now the loop ends and the computer moves on to the next
+                                lines of code. </p>
+
+    </div>
+    <!--Third section-->
+    <div style="height:1000px; margin:100px;">
+        <h1>Practice Problems</h1>
+        <p style="line-height: 2.0; font-size:20px;">
+            1. Complete the code so that the for loop runs 5 times. What goes in the "_"?<br>
+            for(int i=0;i<_;i++)<br>
+                <input id="name-input" style="width:300px;">
+                <button onclick="p1();">
+                    Check
+                </button>
+                <p id="output"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            2. Will this code be an infinite loop? Will the loop never stop? (yes or no)<br>
+            <code>
+            int i=10;<br>
+            while(i>0){<br>
+                i++;<br>
+            }<br>
+            <input id="name1-input" style="width:300px;">
+            <button onclick="p2();">
+                Check
+            </button>
+        <p id="output1"></p>
+        </code>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            3. You are given an integer c that's set to zero. Write a while loop that adds one to c each time and ends
+            when c is greater than or equal to 20.<br>
+            Step 1: write "while statement". Include the "{".<br>
+            <input id="name2-input" style="width:300px;">
+            <button onclick="p3();">
+                Check
+            </button><br>
+        <p id="output2"></p>
+        Step 2: Write the command.<br>
+        <input id="name3-input" style="width:300px;">
+        <button onclick="p4();">
+            Check
+        </button><br>
+        <p id="output3"></p>
+        Step 3: You already wrote the "{". What do you need here?<br>
+        <input id="name4-input" style="width:300px;">
+        <button onclick="p5();">
+            Check
+        </button>
+        <p id="output4"></p>
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            4. Using a while loop, set each element of an integer array named "arr" size 10 to its index.<br>
+            Step 1: Create index. Call it i. Think about what to set it equal to.<bR>
+            <input id="name5-input" style="width:300px;">
+            <button onclick="p6();">
+                Check
+            </button>
+        <p id="output5"></p>
+        Step 2: Create while loop. Include "{".<br>
+        <input id="name6-input" style="width:300px;">
+        <button onclick="p7();">
+            Check
+        </button>
+        <p id="output6"></p>
+        Step 3: Command.<br>
+        <input id="name7-input" style="width:300px;">
+        <button onclick="p8();">
+            Check
+        </button>
+        <p id="output7"></p>
+        Step 4: You have a "{" so what do you need at the end?<br>
+        <input id="name8-input" style="width:300px;">
+        <button onclick="p9();">
+            Check
+        </button>
+        <p id="output8"></p>
+        </p>
+        <div style="height:250px;">&nbsp;</div>
+        <p style="line-height: 2.0; font-size:20px;">
+            You won a Sticker! <br>
+            The Lion King (1994)<br>
+            <img src="sticker/lionking.jpg" alt="Hello" style="height:375px; margin:100px;"><br>
+            Collection:<br>
+            <img src="sticker/toystory.webp" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/tangeled.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/littlemermaid.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/cars.jpg" alt="Hello" style="height:200px; margin:100px;"><br>
+            <img src="sticker/frozen.jpg" alt="Hello" style="height:200px; margin:100px;">
+        </p>
+        <p style="line-height: 2.0; font-size:20px;">
+            Amazing Job! Way to Go! <br>
+            Next Lesson: <a href="Lesson7.html">Problems(Easy)</a><br>
+            Home Page: <a href="main.html">Home</a>
+        </p>
+    </div>
+</body>
+
+</html>
