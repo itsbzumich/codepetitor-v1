@@ -148,8 +148,22 @@
                 outputElement.innerText = 'Try Again!'
             }
         }
+function show() {
+
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+        }
+
     </script>
-</head>
+    <style>
+        #image {
+            display: none;
+        }
+    </style></head>
 
 <body>
     <div class="topnav" style="background-color:#333"">
