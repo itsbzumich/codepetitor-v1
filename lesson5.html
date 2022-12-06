@@ -355,7 +355,21 @@
         <p style="line-height: 2.0; font-size:20px;">
             You won a Sticker! <br>
             Toy Story (1995)<br>
-            <img src="sticker/toystory.webp" alt="Hello" style="height:375px; margin:10px;"><br>
+                                                          <img id="image" src="sticker/toystory.webp" alt="Hello" style="height:375px; margin:10px;"><br>
+            <button type="button" onclick="show()" id="btnID">
+                Show Sticker!
+            </button><br>
+            <script>
+                function show() {
+                    /* Access image by id and change
+                    the display property to block*/
+                    document.getElementById('image')
+                        .style.display = "block";
+
+                    document.getElementById('btnID')
+                        .style.display = "none";
+                }
+            </script>
             Collection:<br>
             <img src="sticker/tangeled.jpg" alt="Hello" style="height:200px; margin:10px;"><br>
             <img src="sticker/littlemermaid.jpg" alt="Hello" style="height:200px; margin:10px;"><br>
